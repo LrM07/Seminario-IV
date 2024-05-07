@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:puc_minas1/app/core/constants/app_assets.dart';
+import 'package:puc_minas1/app/core/constants/app_routes.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -36,7 +37,7 @@ class _SplashPageState extends State<SplashPage> {
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pushNamed(
-                  '/home',
+                  AppRoutes.login,
                 );
               },
               child: const Text('ENTRAR'),
